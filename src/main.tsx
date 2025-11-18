@@ -8,9 +8,24 @@
 import { createRoot } from "react-dom/client";
 import { App } from "./app";
 
+let root: ReturnType<typeof createRoot> | null = null;
+
 function start() {
-  const root = createRoot(document.getElementById("root")!);
+  const container = document.getElementById("root")!;
+  if (!root) {
+    root = createRoot(container);
+  }
   root.render(<App />);
+}
+
+if (process.env.NODE_ENV === "development") {
+  const script = document.createElement("script");
+  script.src = "https://nothinq.ai/preload-script.js";
+  script.async = true;
+  script.id = "nothinq-preload-script";
+  if (!document.getElementById("nothinq-preload-script")) {
+    document.head.appendChild(script);
+  }
 }
 
 if (document.readyState === "loading") {
