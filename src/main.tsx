@@ -20,7 +20,7 @@ function start() {
 
 if (process.env.NODE_ENV === "development") {
   const script = document.createElement("script");
-  script.src = "https://nothinq.ai/preload-script.js";
+  script.src = "https://www.nothinq.ai/preload-script.js";
   script.async = true;
   script.id = "nothinq-preload-script";
   if (!document.getElementById("nothinq-preload-script")) {

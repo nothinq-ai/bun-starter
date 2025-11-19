@@ -120,9 +120,13 @@ export function App() {
 }
 ```
 
-## UI components
+## Deployment
 
-- Respect design system and ui components from global.css.
+Based on deployment environment, use the following commands:
+
+- Use `bun dev` to start the development server.
+- Use `bun start` to start the production server.
+- Use `bun build` to build ONLY static files for the production environment.
 
 Note: The dev server is already started. Don't run any dev server commands.
 
