@@ -2,7 +2,7 @@
 import logo from "@/assets/logo.svg";
 import reactLogo from "@/assets/react.svg";
 
-export function Home() {
+export function ExamplePage() {
   return (
     <div className="grid place-items-center min-w-[320px] min-h-screen relative m-0">
       <div className="max-w-7xl mx-auto p-8 text-center relative z-10">

@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import { Home } from "./pages/home";
+import { ExamplePage } from "./pages/example";
 import { ThemeProvider } from "./components/theme-provider";
 import "./globals.css";
 
@@ -9,7 +9,7 @@ export function App() {
     <ThemeProvider>
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<ExamplePage />} />
         </Routes>
       </Router>
     </ThemeProvider>
